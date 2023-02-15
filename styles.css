@@ -1,0 +1,113 @@
+/* Author Atina Che-Quang, Creation date: Febuary 15th 2023 */
+:root{
+    --firstcolor: #84a59d;
+    --secondcolor: #f28482;
+    --thirdcolor:#f6bd60;
+    --forthcolor: #f5cac3;
+    --fifthcolor: #f7ede2;
+
+
+}
+
+* {
+    /* defaut font settings */
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    /* page base color */
+    background-color: var(--firstcolor);
+}
+.header{
+    /* assigned setting for title */
+    background-color: var(--secondcolor);
+    text-decoration-line: underline;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 10px 10vw;
+    border-radius: 10px;
+}
+#header-text{
+
+}
+
+main{
+    /* heading positioning */
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.choices{
+    /* settting ro the setion that holds the choice options */
+    background-color: var(--thirdcolor);
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+}
+
+#choices-title{
+    margin: 25px 0px;
+}
+
+/* select button settings */
+#ingredient-select{
+    width:auto;
+}
+#select:hover{
+    transform: scale(150%);
+}
+
+/* lets go button settings */
+#location-select{
+    width:auto;
+}
+#location:hover{
+    transform: scale(150%);
+}
+
+/* Squril button setting */
+.random-btn{
+    margin: 10px;
+    text-align: center;
+}
+
+#randomButton{
+    padding: 5px 10px;
+    width: auto;
+    border-radius: 5px;
+}
+
+#randomButton:hover{
+    transform: scale(150%);
+}
+
+/* settings for the section that holds the recipe information */
+.meal-info{
+    background-color: var(--forthcolor);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* setting for the location that holds the image */
+.meal-image{
+    justify-content: center;
+    font-size: 20px;
+    background-color: var(--fifthcolor);
+    z-index: 5;
+    padding: 50px;
+    margin: 10px;
+}
+
+/* settings for the recipe  */
+.meal-text{
+    justify-content:center;
+
+    background-color: var(--fifthcolor);
+    padding: 50px;
+    margin: 10px;
+}

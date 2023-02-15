@@ -1,0 +1,69 @@
+<!--Author Atina Che-Quang, Creation date: Febuary 15th 2023-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Web Project</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <h1 id="header-text">Ingredient Assist</h1>
+            </div>
+        </header>
+        <main>
+            <!--Ingreadient section -->
+            <div class="choices">
+                <h3 id="choices-title"> Select what ingredient you wish to use to cook with.</h3>
+                <div>
+                    <h3 id="choices-title"> Ingredient:</h3>
+
+                    <!--Drop down button that displays a recipe based on selected ingredient-->
+                    <form>
+                        <select name="" id="ingredient-select">
+                            <option value=""></option>
+                        </select>
+                    </form>
+                    <div>
+                        <input type="button" id="select" value="Select">
+                    </div>
+                    <!--- drop down menu to select based on Geographical area.-->
+                    <h3 id="choices-title"> Choose the recipe via Geographical area:</h3>
+                    <form>
+                        <select name="" id="location-select">
+                            <option value=""></option>
+                        </select>
+                    </form>
+                    <div>
+                        <input type="button" id= "location" value="Lets Go!">
+                    </div>
+                    <!--Random Generator button-->
+                    <h4 id="choices-title"> Having a squirrel preference moment select the button below:</h4>
+                    <div class="random-btn">
+                        <button id="randomButton">Squirrel!!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+            <!--contains the image and recipe taht is pulled based on choice-->
+                <div class="meal-info"></div>
+                    <!-- food image displayed-->
+                    <div class="meal-image">
+                        <p>Doesnt this look delicious!</p>
+                        <img src="images/Meal-Placeholder-Image.jpg" alt="Image of the meal being displayed" class="meal-image" id="mealImage">
+                    </div>
+                    <!-- recipe displayed-->
+                    <div class="meal-text">
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <script src="apps.js"></script>
+    </body>
+</html>
